@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.4.7",
+    "dotenv-cli": "^8.0.0",
+    "express": "^4.21.2",
+    "nodemon": "^3.1.9"
+  },
+  "scripts": {
+    "start": "dotenv -e .env.development -- nodemon index.js",
+    "build": "dotenv -e .env.production -- nodemon index.js",
+    "deploy": "dotenv -e .env.domain -- nodemon index.js"
+  }
+}
